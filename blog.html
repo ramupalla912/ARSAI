@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights - AksharA Designs</title>
+    <meta name="description" content="Explore architectural insights, sustainable design trends, and thought leadership from the ArchStudio team.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="nav-container fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-text hover:text-accent transition-colors duration-300">
+                        AksharA <span class="text-accent">Designs</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link">Home</a>
+                        
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="blog.html" class="nav-link active">Insights</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <button id="theme-toggle" class="theme-toggle ml-4">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="theme-toggle-mobile" class="theme-toggle mr-4">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="mobile-nav-link">Home</a>                
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Insights</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title fade-in-up">Architectural Insights</h1>
+            <p class="page-subtitle fade-in-up" style="animation-delay: 0.2s;">
+                Exploring the future of sustainable design and architectural innovation
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="section-padding bg-background">
+        <div class="container">
+            <div class="featured-article fade-in-up">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <div class="article-meta mb-4">
+                            <span class="article-category">Sustainability</span>
+                            <span class="article-date">January 15, 2024</span>
+                        </div>
+                        <h2 class="article-title text-4xl font-bold mb-6">The Future of Carbon-Neutral Architecture</h2>
+                        <p class="article-excerpt text-lg mb-6">
+                            As the construction industry grapples with its environmental impact, innovative approaches to carbon-neutral architecture are emerging. From biophilic design principles to cutting-edge building materials, discover how the next generation of buildings will contribute to climate solutions rather than problems.
+                        </p>
+                        <div class="article-author mb-6">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Maria Chen" class="author-avatar">
+                            <div class="author-info">
+                                <div class="author-name">Maria Chen</div>
+                                <div class="author-role">Principal Architect</div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-primary">Read Full Article</a>
+                    </div>
+                    <div>
+                        <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" alt="Carbon-Neutral Architecture" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="blog-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Smart Home Technology" class="blog-image lazy-load">
+                        <div class="blog-category">Technology</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">January 10, 2024</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Integrating Smart Home Technology in Modern Architecture</h3>
+                        <p class="blog-excerpt">
+                            Exploring how IoT and smart systems are seamlessly integrated into contemporary home design without compromising aesthetic appeal.
+                        </p>
+                        <div class="blog-author">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg" alt="David Rodriguez" class="author-avatar-small">
+                            <span class="author-name-small">David Rodriguez</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="blog-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/1170686/pexels-photo-1170686.jpeg" alt="Biophilic Design" class="blog-image lazy-load">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">January 5, 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <h3 class="blog-title">Biophilic Design: Bringing Nature Into Urban Spaces</h3>
+                        <p class="blog-excerpt">
+                            How incorporating natural elements into architectural design improves wellbeing and creates more livable urban environments.
+                        </p>
+                        <div class="blog-author">
+                            <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg" alt="Sarah Johnson" class="author-avatar-small">
+                            <span class="author-name-small">Sarah Johnson</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 3 -->
+                <article class="blog-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/1029604/pexels-photo-1029604.jpeg" alt="Affordable Housing" class="blog-image lazy-load">
+                        <div class="blog-category">Social Impact</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 28, 2023</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <h3 class="blog-title">Affordable Housing Solutions Through Innovative Design</h3>
+                        <p class="blog-excerpt">
+                            Addressing the housing crisis with creative architectural solutions that maintain quality while reducing costs.
+                        </p>
+                        <div class="blog-author">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Maria Chen" class="author-avatar-small">
+                            <span class="author-name-small">Maria Chen</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 4 -->
+                <article class="blog-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg" alt="Workplace Design" class="blog-image lazy-load">
+                        <div class="blog-category">Commercial</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 20, 2023</span>
+                            <span class="blog-read-time">4 min read</span>
+                        </div>
+                        <h3 class="blog-title">Post-Pandemic Workplace Design: Flexibility and Wellness</h3>
+                        <p class="blog-excerpt">
+                            How office design has evolved to support hybrid work models and prioritize employee health and wellbeing.
+                        </p>
+                        <div class="blog-author">
+                            <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg" alt="Sarah Johnson" class="author-avatar-small">
+                            <span class="author-name-small">Sarah Johnson</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 5 -->
+                <article class="blog-card fade-in-up" style="animation-delay: 0.5s;">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg" alt="Climate Resilient Design" class="blog-image lazy-load">
+                        <div class="blog-category">Sustainability</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 15, 2023</span>
+                            <span class="blog-read-time">8 min read</span>
+                        </div>
+                        <h3 class="blog-title">Climate-Resilient Architecture for Extreme Weather</h3>
+                        <p class="blog-excerpt">
+                            Designing buildings that can withstand increasing climate volatility while maintaining comfort and efficiency.
+                        </p>
+                        <div class="blog-author">
+                            <img src="https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg" alt="David Rodriguez" class="author-avatar-small">
+                            <span class="author-name-small">David Rodriguez</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 6 -->
+                <article class="blog-card fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg" alt="Adaptive Reuse" class="blog-image lazy-load">
+                        <div class="blog-category">Innovation</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">December 10, 2023</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">Adaptive Reuse: Transforming Historic Buildings</h3>
+                        <p class="blog-excerpt">
+                            The art of breathing new life into old structures while preserving their historical character and cultural significance.
+                        </p>
+                        <div class="blog-author">
+                            <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Maria Chen" class="author-avatar-small">
+                            <span class="author-name-small">Maria Chen</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-12 fade-in-up">
+                <button class="btn-outline">
+                    Load More Articles
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section-padding bg-background">
+        <div class="container">
+            <div class="newsletter-section">
+                <div class="text-center mb-8 fade-in-up">
+                    <h2 class="section-title">Stay Updated</h2>
+                    <p class="section-subtitle">Get the latest architectural insights delivered to your inbox</p>
+                </div>
+                
+                <!-- <form class="newsletter-form fade-in-up" style="animation-delay: 0.2s;"> -->
+                <form id="contact-form" class="newsletter-form fade-in-up" style="animation-delay: 0.2s;" method="POST" action="https://formspree.io/f/mrblpval">
+                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn-primary whitespace-nowrap">
+                            <span class="btn-text">Subscribe</span>
+                            <span class="btn-loading hidden">
+                                <i class="fas fa-spinner fa-spin"></i> Subscribing...
+                            </span>
+                        </button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Akshara Designs</h3>
+                    <p class="text-gray-300 mb-4">
+                        Designing sustainable architectural solutions that inspire and endure.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sai.palla.3" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sai.palla.3?utm_source=ig_web_button_share_sheet&igsh=MTFsbmpoZHNnY2R4bA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    
+                    <ul class="footer-links">
+
+                        <li><a href="projects.html">Commercial Design</a></li>
+                        <li><a href="projects.html">Residential Projects</a></li>
+                        <li><a href="projects.html">Sustainable Architecture</a></li>
+                        <li><a href="projects.html">Interior Design</a></li>
+                    </ul>
+                </a>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Insights</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p class="contact-item">
+  <a href="https://www.google.com/maps/@17.3604911,78.530779,3a,75y,274.55h,119.68t/data=!3m7!1e1!3m5!1s8SRw-LFRh9MU3xrxHJ6FpQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-29.684987873510806%26panoid%3D8SRw-LFRh9MU3xrxHJ6FpQ%26yaw%3D274.5481637693688!7i16384!8i8192?entry=ttu"
+     target="_blank"
+     class="text-white hover:text-accent transition-colors duration-300 flex items-center gap-2">
+    <i class="fas fa-map-marker-alt"></i>
+    21-10, Rd Number 1, VV Nagar, Sharada Nagar, Dilsukhnagar, Hyderabad, Telangana 500060
+  </a>
+</p>
+                        <p class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            +91 9246150402
+                        </p>
+                        <p class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            arsaisgm@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-gray-400 text-center">
+                    © 2025 Akshara Designs. All rights reserved. | <a href="privacy-policy.html" class="hover:text-accent transition-colors">Privacy Policy</a> | <a href="terms-of-service.html" class="hover:text-accent transition-colors">Terms of Service</a>
+                </p>
+                <div class="container mx-auto px-4 text-center space-y-4">
+                    <p class="text-sm sm:text-base">
+                    Designed & Developed with ❤️ by <strong class="text-white">Ramu Palla</strong>
+                    </p>
+
+                    <p class="text-xs sm:text-sm">
+                    Connect with me on 
+                    <a href="https://www.instagram.com/ramu_elite.0209" target="_blank" class="text-blue-400 hover:text-white transition">
+                        @ramu_elite.0209
+                    </a>
+                    </p>
+
+                    <p class="text-xs text-gray-500">
+                    &copy; <span id="year"></span> All rights reserved. Architectural designs with passion & precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const submitButton = form.querySelector('button[type="submit"]');
+    const originalBtnText = submitButton.innerHTML;
+
+    // Optional: show loading state
+    submitButton.disabled = true;
+    submitButton.innerHTML = 'Subscribing...';
+
+    // Get the email input value
+    const emailInput = form.querySelector('input[type="email"]');
+    const email = emailInput.value.trim();
+
+    const formData = new FormData();
+    formData.append('email', email);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            // Success UI
+            alert('Thank you for subscribing!');
+            form.reset();
+        } else {
+            // Failed submission
+            alert('There was a problem. Please try again later.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Something went wrong. Please try again.');
+    } finally {
+        // Reset the button
+        submitButton.disabled = false;
+        submitButton.innerHTML = originalBtnText;
+    }
+});
+</script>
+
+</body>
+</html>

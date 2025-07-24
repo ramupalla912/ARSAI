@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AksharA Designs</title>
+    <meta name="description" content="Get in touch with ArchStudio for your next architectural project. Contact our team of experts today.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="nav-container fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-text hover:text-accent transition-colors duration-300">
+                        AksharA <span class="text-accent">Designs</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link active">Home</a>                        
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="blog.html" class="nav-link">Insights</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="about.html" class="nav-link">About</a>
+
+                        <button id="theme-toggle" class="theme-toggle ml-4">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="theme-toggle-mobile" class="theme-toggle mr-4">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Insights</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title fade-in-up">Contact Us</h1>
+            <p class="page-subtitle fade-in-up" style="animation-delay: 0.2s;">
+                Ready to start your architectural journey? Let's discuss your vision
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section-padding bg-background">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="fade-in-left">
+                    <div class="contact-form-container">
+                        <h2 class="section-title mb-6">Get In Touch</h2>
+                        <p class="section-text mb-8">
+                            Ready to transform your space? Share your vision with us and let's create something extraordinary together.
+                        </p>
+                        
+                        <form id="contact-form" class="contact-form" method="POST" action="https://formspree.io/f/mrblpval">
+
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                                <div class="form-error" id="name-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                                <div class="form-error" id="email-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input name="phone" class="form-input" required>
+                                <div class="form-error" id="phone-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="project-type" class="form-label">Project Type</label>
+                                <select id="project-type" name="project-type" class="form-input">
+                                    <option value="">Select project type</option>
+                                    <option value="residential">Residential</option>
+                                    <option value="commercial">Commercial</option>
+                                    <option value="institutional">Institutional</option>
+                                    <option value="renovation">Renovation</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Description</label>
+                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Tell us about your project vision, requirements, and any specific goals you have in mind..."></textarea>
+                                <div class="form-error" id="message-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="form-checkbox">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkbox-mark"></span>
+                                    Subscribe to our newsletter for architectural insights and updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading hidden">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                        
+                        <div id="form-success" class="form-success hidden">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="fade-in-right">
+                    <div class="contact-info-container">
+                        <h2 class="section-title mb-6">Visit Our Studio</h2>
+                        <p class="section-text mb-8">
+                            Stop by our design studio to discuss your project in person. We're located in the heart of the creative district, surrounded by inspiring architecture.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h3 class="contact-detail-title">Address</h3>
+                                    <p class="contact-item">
+                                    <a href="https://www.google.com/maps/@17.3604911,78.530779,3a,75y,274.55h,119.68t/data=!3m7!1e1!3m5!1s8SRw-LFRh9MU3xrxHJ6FpQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-29.684987873510806%26panoid%3D8SRw-LFRh9MU3xrxHJ6FpQ%26yaw%3D274.5481637693688!7i16384!8i8192?entry=ttu"
+                                        target="_blank"
+                                        class="text-white hover:text-accent transition-colors duration-300 flex items-center gap-2">
+                                        <!-- <i class="fas fa-map-marker-alt"></i> -->
+                                        21-10, Rd Number 1, VV Nagar, Sharada Nagar, Dilsukhnagar, Hyderabad, Telangana 500060
+                                    </a>
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h3 class="contact-detail-title">Phone</h3>
+                                    <p class="contact-detail-text">+91 9246150402</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h3 class="contact-detail-title">Email</h3>
+                                    <p class="contact-detail-text">arsaisgm@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-detail-content">
+                                    <h3 class="contact-detail-title">Office Hours</h3>
+                                    <p class="contact-detail-text">
+                                        Monday - Saturday: 9:00 AM - 6:00 PM<br>
+                                        Sunday: Opened
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Placeholder -->
+                        <div class="map-container mt-8">
+  <div class="map-placeholder relative">
+    <iframe src="https://www.google.com/maps/embed?pb=!4v1753281246657!6m8!1m7!1s8SRw-LFRh9MU3xrxHJ6FpQ!2m2!1d17.36049113953856!2d78.53077896177423!3f274.55!4f29.680000000000007!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    
+    <div class="map-overlay absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 rounded-lg">
+      <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+      <p class="text-white font-semibold mt-2">Our Studio Location</p>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+                        
+                        <!-- Social Links -->
+                        <div class="social-section mt-8">
+                            <h3 class="text-lg font-semibold text-text mb-4 ">Follow Our Journey</h3>
+                            <div class="social-links-horizontal">
+                                <a href="https://www.instagram.com/sai.palla.3?utm_source=ig_web_button_share_sheet&igsh=MTFsbmpoZHNnY2R4bA==" class="social-link-large"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link-large"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-link-large"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/sai.palla.3" class="social-link-large"><i class="fab fa-facebook"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Common questions about our architectural services</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="faq-container">
+                    <!-- <div class="faq-item fade-in-up" style="animation-delay: 0.1s;">
+                        <button class="faq-question">
+                            <span>What is your typical project timeline?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Project timelines vary based on scope and complexity. Residential projects typically take 6-12 months from design to completion, while commercial projects can range from 12-24 months. We provide detailed timelines during our initial consultation.</p>
+                        </div>
+                    </div> -->
+                    
+                    <div class="faq-item fade-in-up" style="animation-delay: 0.2s;">
+                        <button class="faq-question">
+                            <span>Do you offer sustainable design options?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! Sustainability is at the core of our practice. We specialize in LEED certification, passive house design, and carbon-neutral construction methods. Every project incorporates sustainable principles tailored to your specific needs and budget.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in-up" style="animation-delay: 0.3s;">
+                        <button class="faq-question">
+                            <span>What services do you provide?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We offer comprehensive architectural services including conceptual design, schematic design, design development, construction documents, permitting assistance, and construction administration. We also provide interior design and landscape architecture services.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item fade-in-up" style="animation-delay: 0.4s;">
+                        <button class="faq-question">
+                            <span>How do you approach budget management?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We believe in transparent budget management from day one. We work closely with you to establish realistic budgets and provide regular updates throughout the project. Our experience helps us identify cost-effective solutions without compromising design quality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Akshara Designs</h3>
+                    <p class="text-gray-300 mb-4">
+                        Designing sustainable architectural solutions that inspire and endure.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sai.palla.3" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sai.palla.3?utm_source=ig_web_button_share_sheet&igsh=MTFsbmpoZHNnY2R4bA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    
+                    <ul class="footer-links">
+
+                        <li><a href="projects.html">Commercial Design</a></li>
+                        <li><a href="projects.html">Residential Projects</a></li>
+                        <li><a href="projects.html">Sustainable Architecture</a></li>
+                        <li><a href="projects.html">Interior Design</a></li>
+                    </ul>
+                </a>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Insights</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p class="contact-item">
+                        <a href="https://www.google.com/maps/@17.3604911,78.530779,3a,75y,274.55h,119.68t/data=!3m7!1e1!3m5!1s8SRw-LFRh9MU3xrxHJ6FpQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-29.684987873510806%26panoid%3D8SRw-LFRh9MU3xrxHJ6FpQ%26yaw%3D274.5481637693688!7i16384!8i8192?entry=ttu"
+                            target="_blank"
+                            class="text-white hover:text-accent transition-colors duration-300 flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            21-10, Rd Number 1, VV Nagar, Sharada Nagar, Dilsukhnagar, Hyderabad, Telangana 500060
+                        </a>
+                        </p>
+                        <p class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            +91 9246150402
+                        </p>
+                        <p class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            arsaisgm@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-gray-400 text-center">
+                    © 2025 Akshara Designs. All rights reserved. | <a href="privacy-policy.html" class="hover:text-accent transition-colors">Privacy Policy</a> | <a href="terms-of-service.html" class="hover:text-accent transition-colors">Terms of Service</a>
+                </p>
+                <div class="container mx-auto px-4 text-center space-y-4">
+                    <p class="text-sm sm:text-base">
+                    Designed & Developed with ❤️ by <strong class="text-white">Ramu Palla</strong>
+                    </p>
+
+                    <p class="text-xs sm:text-sm">
+                    Connect with me on 
+                    <a href="https://www.instagram.com/ramu_elite.0209" target="_blank" class="text-blue-400 hover:text-white transition">
+                        @ramu_elite.0209
+                    </a>
+                    </p>
+
+                    <p class="text-xs text-gray-500">
+                    &copy; <span id="year"></span> All rights reserved. Architectural designs with passion & precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const submitBtn = document.getElementById('submit-btn');
+    const btnText = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+
+    // Step 1: Show loading spinner
+    submitBtn.disabled = true;
+    btnText.classList.add('hidden');
+    btnLoading.classList.remove('hidden');
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            // Step 2: Reset form and show success message
+            form.reset();
+            document.getElementById('form-success').classList.remove('hidden');
+        } else {
+            alert('There was a problem submitting the form.');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('Something went wrong.');
+    } finally {
+        // Step 3: Hide spinner, show button again
+        submitBtn.disabled = false;
+        btnText.classList.remove('hidden');
+        btnLoading.classList.add('hidden');
+    }
+});
+</script>
+
+</body>
+</html>

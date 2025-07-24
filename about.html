@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AksharA Designs</title>
+    <meta name="description" content="Learn about ArchStudio's mission, values, and the talented team behind our innovative architectural solutions.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="transition-colors duration-300">
+    <!-- Navigation -->
+    <nav class="nav-container fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-scrolled">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-text hover:text-accent transition-colors duration-300">
+                        AksharA <span class="text-accent">Designs</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="nav-link">Home</a>
+                        
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="blog.html" class="nav-link">Insights</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                        <a href="about.html" class="nav-link active">About</a>
+                        <button id="theme-toggle" class="theme-toggle ml-4">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="theme-toggle-mobile" class="theme-toggle mr-4">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="mobile-menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="mobile-nav-link">Home</a>                
+                <a href="projects.html" class="mobile-nav-link">Projects</a>
+                <a href="blog.html" class="mobile-nav-link">Insights</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container text-center">
+            <h1 class="page-title fade-in-up">About Akshara Designs</h1>
+            <p class="page-subtitle fade-in-up" style="animation-delay: 0.2s;">
+                Pioneering sustainable architecture for over 22 years
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section-padding bg-background">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-left">
+                    <h2 class="section-title">Our Story</h2>
+                    <p class="section-text mb-6">
+                        Founded in 2002 by visionary architects Maria Chen and David Rodriguez, ArchStudio emerged from a shared passion for creating spaces that harmonize human needs with environmental stewardship. What began as a small studio in Portland has grown into an internationally recognized firm.
+                    </p>
+                    <p class="section-text mb-6">
+                        Our journey has been marked by a relentless pursuit of innovation, sustainability, and design excellence. From our first LEED-certified project to our current work with carbon-neutral buildings, we've consistently pushed the boundaries of what architecture can achieve.
+                    </p>
+                    <p class="section-text">
+                        Today, ArchStudio stands as a testament to the power of thoughtful design, having completed over 200 projects across residential, commercial, and institutional sectors, each one contributing to a more sustainable and beautiful built environment.
+                    </p>
+                </div>
+                <div class="fade-in-right">
+                    <img src="https://images.pexels.com/photos/1170686/pexels-photo-1170686.jpeg" alt="ArchStudio Office" class="rounded-lg shadow-lg w-full h-96 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Mission & Values</h2>
+                <p class="section-subtitle">The principles that guide our architectural practice</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="value-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="value-title">Sustainability</h3>
+                    <p class="value-description">
+                        Every design decision considers environmental impact, energy efficiency, and long-term sustainability for future generations.
+                    </p>
+                </div>
+                
+                <div class="value-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="value-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="value-title">Innovation</h3>
+                    <p class="value-description">
+                        We embrace cutting-edge technologies and design methodologies to create spaces that anticipate future needs.
+                    </p>
+                </div>
+                
+                <div class="value-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="value-title">Collaboration</h3>
+                    <p class="value-description">
+                        Our success stems from close partnerships with clients, communities, and multidisciplinary teams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section-padding bg-background">
+        <div class="container">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-subtitle">Meet the visionaries behind AksharA Designs's success</p>
+            </div>
+            
+            <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="team-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="team-image-container">
+                        <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg" alt="Maria Chen" class="team-image">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Maria Chen</h3>
+                        <p class="team-role">Founding Partner & Principal Architect</p>
+                        <p class="team-description">
+                            AIA Fellow with 25 years of experience in sustainable design. Leading expert in passive house construction and green building technologies.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- <div class="flex justify-center items-center min-h-screen">
+                    <div class="team-image-container">
+                        <img src="https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-1/454665801_7945878405480567_2253273483154175134_n.jpg?stp=c362.106.1324.1324a_dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ZU0mRMQ6T0UQ7kNvwFAA95b&_nc_oc=Adk9ige5b2-9Pa5XLBoF8k43vAE0-BITtS51x_cCArZSohVJGG6dNB1TolonpMNw7I8nYltzLq4L0folq1ZqadS9&_nc_zt=24&_nc_ht=scontent.fvga2-2.fna&_nc_gid=DYBVMzvW8B_TYRyLlxPRxA&oh=00_AfThKmq4NWPvJ2WSBql6poF5RanToB-Jna7Yc88_iIPE-g&oe=6886A805" alt="Saidhulu Palla" class="team-image">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sai Palla</h3>
+                        <p class="team-role">Architectural Head & Founder | Masters in Civil Engineering</p>
+                        <p class="team-description">
+                            Visionary designer specializing in contemporary residential and commercial architecture. Winner of multiple international design awards.
+                        </p>
+                        <div class="team-social">
+                            <a href="https://www.facebook.com/sai.palla.3" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sai.palla.3?utm_source=ig_web_button_share_sheet&igsh=MTFsbmpoZHNnY2R4bA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="flex justify-center items-center min-h-screen bg-gray-900 px-4">
+                    <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col md:flex-row items-center max-w-4xl w-full p-6 space-y-6 md:space-y-0 md:space-x-8">
+                        
+                        <!-- Image Section -->
+                        <div class="flex-shrink-0">
+                            <img src="https://scontent.fvga2-2.fna.fbcdn.net/v/t39.30808-1/454665801_7945878405480567_2253273483154175134_n.jpg?stp=c362.106.1324.1324a_dst-jpg_s200x200_tt6&_nc_cat=104&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ZU0mRMQ6T0UQ7kNvwFAA95b&_nc_oc=Adk9ige5b2-9Pa5XLBoF8k43vAE0-BITtS51x_cCArZSohVJGG6dNB1TolonpMNw7I8nYltzLq4L0folq1ZqadS9&_nc_zt=24&_nc_ht=scontent.fvga2-2.fna&_nc_gid=DYBVMzvW8B_TYRyLlxPRxA&oh=00_AfThKmq4NWPvJ2WSBql6poF5RanToB-Jna7Yc88_iIPE-g&oe=6886A805"
+                                alt="Sai Palla"
+                                class="w-48 h-48 rounded-lg object-cover border-4 border-gray-700">
+                        </div>
+
+                        <!-- Info Section -->
+                        <div class="text-center md:text-left">
+                            <h3 class="text-white text-2xl font-semibold">Sai Palla</h3>
+                            <p class="text-yellow-500 uppercase text-sm font-semibold mt-1">
+                                Architectural Head & Founder | Masters in Civil Engineering
+                            </p>
+                            <p class="text-gray-300 mt-4 max-w-md">
+                                Visionary designer specializing in contemporary residential and commercial architecture. Winner of multiple international design awards.
+                            </p>
+                            
+                            <!-- Social Icons -->
+                            <div class="mt-4 flex justify-center md:justify-start space-x-4">
+                                <a href="https://www.facebook.com/sai.palla.3" target="_blank" class="text-white hover:text-blue-500 transition">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sai.palla.3" target="_blank" class="text-white hover:text-pink-500 transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+                <!-- <div class="team-card fade-in-up" style="animation-delay: 0.5s;">
+                   
+                </div> -->
+                
+                <!-- <div class="team-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="team-image-container">
+                        <img src="https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg" alt="Sarah Johnson" class="team-image">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sarah Johnson</h3>
+                        <p class="team-role">Senior Architect & Project Manager</p>
+                        <p class="team-description">
+                            Expert in large-scale commercial projects with a focus on workplace design and urban planning. LEED AP certified professional.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards & Recognition -->
+    <section class="section-padding bg-surface">
+        <div class="container">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Awards & Recognition</h2>
+                <p class="section-subtitle">Celebrating excellence in architectural design</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="award-card fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="award-title">AIA National Award</h3>
+                    <p class="award-year">2023</p>
+                    <p class="award-description">Excellence in Sustainable Design</p>
+                </div>
+                
+                <div class="award-card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="award-title">Green Building Award</h3>
+                    <p class="award-year">2022</p>
+                    <p class="award-description">LEED Platinum Certification</p>
+                </div>
+                
+                <div class="award-card fade-in-up" style="animation-delay: 0.3s;">
+                    <div class="award-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="award-title">Design Excellence</h3>
+                    <p class="award-year">2021</p>
+                    <p class="award-description">International Architecture Prize</p>
+                </div>
+                
+                <div class="award-card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="award-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="award-title">Innovation Award</h3>
+                    <p class="award-year">2020</p>
+                    <p class="award-description">Future of Architecture</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <<footer class="footer">
+        <div class="container">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Akshara Designs</h3>
+                    <p class="text-gray-300 mb-4">
+                        Designing sustainable architectural solutions that inspire and endure.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/sai.palla.3" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sai.palla.3?utm_source=ig_web_button_share_sheet&igsh=MTFsbmpoZHNnY2R4bA==" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    
+                    <ul class="footer-links">
+
+                        <li><a href="projects.html">Commercial Design</a></li>
+                        <li><a href="projects.html">Residential Projects</a></li>
+                        <li><a href="projects.html">Sustainable Architecture</a></li>
+                        <li><a href="projects.html">Interior Design</a></li>
+                    </ul>
+                </a>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Insights</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <div class="contact-info">
+                        <p class="contact-item">
+  <a href="https://www.google.com/maps/@17.3604911,78.530779,3a,75y,274.55h,119.68t/data=!3m7!1e1!3m5!1s8SRw-LFRh9MU3xrxHJ6FpQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-29.684987873510806%26panoid%3D8SRw-LFRh9MU3xrxHJ6FpQ%26yaw%3D274.5481637693688!7i16384!8i8192?entry=ttu"
+     target="_blank"
+     class="text-white hover:text-accent transition-colors duration-300 flex items-center gap-2">
+    <i class="fas fa-map-marker-alt"></i>
+    21-10, Rd Number 1, VV Nagar, Sharada Nagar, Dilsukhnagar, Hyderabad, Telangana 500060
+  </a>
+</p>
+                        <p class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            +91 9246150402
+                        </p>
+                        <p class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            arsaisgm@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="text-gray-400 text-center">
+                    © 2025 Akshara Designs. All rights reserved. | <a href="privacy-policy.html" class="hover:text-accent transition-colors">Privacy Policy</a> | <a href="terms-of-service.html" class="hover:text-accent transition-colors">Terms of Service</a>
+                </p>
+                <div class="container mx-auto px-4 text-center space-y-4">
+                    <p class="text-sm sm:text-base">
+                    Designed & Developed with ❤️ by <strong class="text-white">Ramu Palla</strong>
+                    </p>
+
+                    <p class="text-xs sm:text-sm">
+                    Connect with me on 
+                    <a href="https://www.instagram.com/ramu_elite.0209" target="_blank" class="text-blue-400 hover:text-white transition">
+                        @ramu_elite.0209
+                    </a>
+                    </p>
+
+                    <p class="text-xs text-gray-500">
+                    &copy; <span id="year"></span> All rights reserved. Architectural designs with passion & precision.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
